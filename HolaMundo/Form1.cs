@@ -22,11 +22,21 @@ namespace HolaMundo
             string nombre = "";
             nombre = txtMsg.Text;
             lblMsg.Text = "Bienvenido a la P.O.E " + nombre;
+            pbImagen.Visible = true;
+            btnBorrar.Enabled = true;
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             txtMsg.Clear();
+            lblMsg.Text = "";
+            pbImagen.Visible = false;
+            btnBorrar.Enabled = false;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

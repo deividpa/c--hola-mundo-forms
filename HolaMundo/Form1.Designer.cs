@@ -90,9 +90,11 @@ namespace HolaMundo
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnBorrar
             // 
+            this.btnBorrar.Enabled = false;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.Location = new System.Drawing.Point(351, 237);
             this.btnBorrar.Name = "btnBorrar";
@@ -111,6 +113,7 @@ namespace HolaMundo
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 6;
             this.pbImagen.TabStop = false;
+            this.pbImagen.Visible = false;
             // 
             // lblMsg
             // 
